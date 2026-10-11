@@ -1,23 +1,29 @@
 [![GPL3.0 License](https://img.shields.io/badge/license-GPL3.0-blue.svg?style=flat)](https://opensource.org/license/GPL-3.0)
 
-**适用于 [Transitio](https://github.com/PRO-2684/transitio) 插件的QQNT自定义样式**
+**QwQNT 框架下 Transisio / Scriptio 插件的自用脚本与样式合集**
 
-## 以下用户样式均为自用 ##
+- `scriptio` — 用户脚本（.js）
+- `transisio` — 用户样式（.user.css）
 
-## [sidebar-management](./sidebar-management.css)
+> 非官方项目，仅供个人使用与学习。
 
-复刻自[sidebar-management](https://github.com/YF-Eternal/Sidebar-Management)，可设置左边侧边栏的所有选项是否需要隐藏。
+## 样式 ##
 
-![sidebar-management](./images/sidebar-management.png)
+-有些自己写的，一些是fork来的
 
-## [ConversationQuickRemover](./ConversationQuickRemover.js)
+## [ui-management](./ui-management.css)
 
-复刻自[ConversationQuickRemover.js](https://github.com/Natsukage/Scriptio-user-scripts)，快捷移除对话
+窗口UI管理器
 
-## [highlight-at](./highlight-at.css)
+## [customize-more-menu](./customize-more-menu.styl)
 
-高亮艾特
+自定义隐藏 QQNT 主界面更多菜单中的项目
 
-## [hide-self](./hide-self.css)
+## [customize-settings.styl](./customize-settings.styl)
 
-隐藏居右的自己的头像和昵称（兼容 lite-tools）
+自定义隐藏 QQNT 原生设置界面选项
+
+## [hide-emoticon-response.css](./hide-emoticon-response.css)
+
+移除右键消息上的表情回应
+
