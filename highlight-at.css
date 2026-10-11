@@ -1,18 +1,19 @@
 /* ==UserStyle==
 @name           Highlight At
 @description    高亮艾特
-@preprocessor   none
+@namespace      https://github.com/Nekozuka-Hibiki
 @version        0.1.1
-@homepageURL    https://github.com/Nekozuka-Hibiki/Sidebar-Management
-@author        Nekozuka-Hibiki
-@license     	gpl-3.0
+@author         Nekozuka-Hibiki
+@license        GPL-3.0
+@homepageURL    https://github.com/Nekozuka-Hibiki/QwQNT-transisio-scriptio-packs
+@preprocessor   none
 ==/UserStyle== */
 
-/* 
+/*
    核心逻辑：
-   1. 不再添加下划线 (移除了 text-decoration)
-   2. 针对别人发的消息 (.container--others)
-   3. 针对自己发的消息 (.container--self)
+   1. 不再添加下划线（移除了 text-decoration）
+   2. 针对别人发的消息（.container--others）
+   3. 针对自己发的消息（.container--self）
 */
 
 /* 别人发的信息：着色为主题链接色 */
@@ -21,7 +22,7 @@
     color: var(--text_link) !important;
 }
 
-/* 自己发的信息：着色为指定/
+/* 自己发的信息：着色为指定色 */
 /* 注意：使用 !important 确保覆盖默认样式，防止看不见 */
 .container--self msg-at,
 .container--self span.text-element--at {
