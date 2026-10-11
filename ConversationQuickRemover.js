@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Conversation Quick Remover
 // @description  Ctrl+左键点击移除会话
+// @namespace    https://github.com/Nekozuka-Hibiki
+// @version      0.1.1
+// @author       Nekozuka-Hibiki
+// @license      GPL-3.0
+// @homepageURL  https://github.com/Nekozuka-Hibiki/QwQNT-transisio-scriptio-packs
 // @run-at       main
 // @reactive     true
-// @version      0.1.1
-// @homepageURL  https://github.com/Nekozuka-Hibiki/Sidebar-Management
-// @author       Nekozuka-Hibiki
-// @license      gpl-3.0
 // ==/UserScript==
-
 (function () {
   const debug = false; // 是否开启调试模式，开启后会在控制台输出日志
   const log = debug ? console.log.bind(console, "[ConversationQuickRemover]") : () => { };
@@ -42,7 +42,6 @@
 
   function handleClick(event) {
     // 修改逻辑：必须是 Ctrl 键 + 左键 (button 0)
-    // 不再排除 ctrlKey，而是必须包含 ctrlKey
     if (!event.ctrlKey || event.shiftKey || event.altKey || event.metaKey) return;
 
     const targetElement = event.target.closest(".recent-contact-item");
