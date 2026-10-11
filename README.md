@@ -9,7 +9,7 @@
 
 ## 样式 ##
 
--有些自己写的，一些是fork来的
+- 有些自己写的，一些是fork来的
 
 ## [ui-management](./ui-management.css)
 
