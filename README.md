@@ -6,6 +6,7 @@
 - `transisio/` — 用户样式（`.css` / `.styl`）
 
 > 非官方项目，仅供个人使用与学习
+> 部分自写，部分 fork 自其他项目
 
 ## 前置
 
@@ -27,9 +28,13 @@
 
 Ctrl + 左键点击会话，快速移除
 
-## 样式
+### 3. [ShowSendTime](./ShowSendTime.js)
 
-部分自写，部分 fork 自其他项目
+显示消息发送时间
+
+- 支持自定义时间格式、日期格式、时区
+
+## 样式
 
 ### 1. [ui-management](./ui-management.css)
 
