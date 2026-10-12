@@ -2,7 +2,7 @@
 @name           ui-management
 @description    窗口 UI 管理器
 @namespace      https://github.com/Nekozuka-Hibiki
-@version        0.6.1
+@version        0.6.2
 @author         Nekozuka-Hibiki
 @license        GPL-3.0
 @homepageURL    https://github.com/Nekozuka-Hibiki/QwQNT-transisio-scriptio-packs
@@ -19,7 +19,7 @@
 @var checkbox hide-collect "隐藏侧边栏“收藏”选项" [0, "inline-flex", "none"]
 @var checkbox hide-my-phone "隐藏侧边栏“我的手机”选项" [1, "inline-flex", "none"]
 @var checkbox hide-vip "隐藏侧边栏“会员专区”选项" [1, "inline-flex", "none"]
-@var checkbox hidePalette "隐藏侧边栏“调色盘”选项" [1, "inline-flex", "none"]
+@var checkbox hide-palette "隐藏侧边栏“调色盘”选项" [1, "inline-flex", "none"]
 @var checkbox hide-weather-tools "隐藏天气按钮" [1, "inline-flex", "none"]
 @var checkbox hide-placeholder "隐藏输入框提示文字" [1, "inline-flex", "none"]
 @var checkbox hide-signature "隐藏“个性签名”编辑项" [1, "inline-flex", "none"]
@@ -27,25 +27,25 @@
 ==/UserStyle== */
 
 /* ---------- 侧边栏 ---------- */
-div.sidebar__upper > div.sidebar__avatar {
+div.sidebar__avatar {
     display: var(--hide-nickname) !important;
 }
-div.nav.sidebar__nav > div.nav-item[bf-toolbar-item][bf-label-inner="true"][aria-label="消息"] {
+div.nav.sidebar__nav > div.nav-item[aria-label="消息"] {
     display: var(--hide-msg) !important;
 }
-div.nav.sidebar__nav > div.nav-item[bf-toolbar-item][bf-label-inner="true"][aria-label="联系人"] {
+div.nav.sidebar__nav > div.nav-item[aria-label="联系人"] {
     display: var(--hide-contact) !important;
 }
-div.nav.sidebar__nav > div.nav-item[bf-toolbar-item][bf-label-inner="true"][aria-label="空间"] {
+div.nav.sidebar__nav > div.nav-item[aria-label="空间"] {
     display: var(--hide-qzone) !important;
 }
-div.nav.sidebar__nav > div.nav-item[bf-toolbar-item][bf-label-inner="true"][aria-label="频道"] {
+div.nav.sidebar__nav > div.nav-item[aria-label="频道"] {
     display: var(--hide-channels) !important;
 }
-div.nav.sidebar__nav > div.nav-item[bf-toolbar-item][bf-label-inner="true"][aria-label="游戏"] {
+div.nav.sidebar__nav > div.nav-item[aria-label="游戏"] {
     display: var(--hide-games) !important;
 }
-div.nav.sidebar__nav > div.nav-item[bf-toolbar-item][bf-label-inner="true"][aria-label="更多"] {
+div.nav.sidebar__nav > div.nav-item[aria-label="更多"] {
     display: var(--hide-more) !important;
 }
 div.nav-item:has(> div.nav-item-activator[aria-label="会员专区"]) {
@@ -63,8 +63,8 @@ div.nav-item:has(> div.nav-item-activator[aria-label="会员专区"]) {
 .func-menu__item_wrap:has(.icon-item[aria-label="收藏"]) {
     display: var(--hide-collect) !important;
 }
-div.q-context-menu.more-menu > div.more-h-menu > div.more-h-menu-item:has(div[aria-label="调色盘"]) {
-    display: var(--hidePalette) !important;
+div.q-context-menu.more-menu div.more-h-menu-item:has(div[aria-label="调色盘"]) {
+    display: var(--hide-palette) !important;
 }
 
 /* ---------- 其他 UI ---------- */
