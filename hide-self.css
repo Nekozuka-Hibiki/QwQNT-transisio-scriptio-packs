@@ -2,28 +2,28 @@
 @name           Hide Self
 @description    隐藏居右的自己的头像和昵称（兼容 lite-tools）
 @namespace      https://github.com/Nekozuka-Hibiki
-@version        0.1.4
+@version        0.1.8
 @author         Nekozuka-Hibiki
 @license        GPL-3.0
 @homepageURL    https://github.com/Nekozuka-Hibiki/QwQNT-transisio-scriptio-packs
 @preprocessor   none
 ==/UserStyle== */
 
-/* 规则1：基础隐藏（无 lite-tools 时生效） */
-.message-container.message-container--self.message-container--align-right {
+.message-container.message-container--align-right {
+    /* 兜底：无 lt-slot 时的 4 列布局 */
     grid-template-areas:
         "checkbox . status content"
         "checkbox tips tips tips";
     grid-template-columns: auto 1fr calc(var(--avatar_size_2) + 8px);
-    > .avatar-span {
-        display: none;
-    }
+
+    /* 隐藏头像和昵称 */
+    > .avatar-span,
     > .user-name {
         display: none;
     }
 }
 
-/* 规则2：覆盖 lite-tools 的列宽（有 lite-tools 时生效） */
+/* 有 lt-slot 时，只覆盖 columns，不碰 areas */
 .message-container:has(.content-status .lt-slot).message-container--align-right {
     grid-template-columns: auto 1fr 0 !important;
 }
