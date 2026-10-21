@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Quick Group File
-// @description  “群应用”按钮改为“群文件”快捷入口，点击直接打开群文件
+// @description  “群应用”按钮替换为“群文件”
 // @namespace    https://github.com/Nekozuka-Hibiki
 // @version      1.0.0
 // @author       Nekozuka-Hibiki
