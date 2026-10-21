@@ -27,7 +27,13 @@
 
 Ctrl + 左键点击会话，快速移除
 
-### 3. [ShowSendTime](./ShowSendTime.js)
+### 3. [QuickGroupFile](./QuickGroupFile.js)
+
+“群应用”按钮替换为“群文件”
+
+- 自动替换图标，移除原生下拉菜单
+
+### 4. [ShowSendTime](./ShowSendTime.js)
 
 显示消息发送时间
 
