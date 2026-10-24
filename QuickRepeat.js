@@ -8,7 +8,7 @@
 // @homepageURL  https://github.com/Nekozuka-Hibiki/QwQNT-transisio-scriptio-packs
 // @run-at       main
 // @reactive     true
-// ==/UserScript==// ==/UserScript==
+// ==/UserScript==
 
 (function () {
   "use strict";
