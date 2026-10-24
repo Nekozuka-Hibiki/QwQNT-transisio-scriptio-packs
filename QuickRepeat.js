@@ -1,11 +1,14 @@
 // ==UserScript==
 // @name         QuickRepeat (+1 Button)
 // @description  绘制类原生 +1 按钮，双击复读
+// @namespace    https://github.com/Nekozuka-Hibiki
+// @version      0.4.3
+// @author       Nekozuka-Hibiki
+// @license      GPL-3.0
+// @homepageURL  https://github.com/Nekozuka-Hibiki/QwQNT-transisio-scriptio-packs
 // @run-at       main
 // @reactive     true
-// @version      0.4.3
-// @license      gpl-3.0
-// ==/UserScript==
+// ==/UserScript==// ==/UserScript==
 
 (function () {
   "use strict";
