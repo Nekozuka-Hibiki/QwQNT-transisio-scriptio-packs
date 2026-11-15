@@ -1,0 +1,44 @@
+/* ==UserStyle==
+@name           Chat Enhancements
+@description    聊天界面增强：隐藏自己头像、高亮@、移除表情回应
+@namespace      https://github.com/Nekozuka-Hibiki
+@version        26.11.16
+@author         Nekozuka-Hibiki
+@license        GPL-3.0
+@homepageURL    https://github.com/Nekozuka-Hibiki/QwQNT-transisio-scriptio-packs
+@preprocessor   none
+==/UserStyle== */
+
+/* 1. 隐藏自己头像和昵称 */
+.message-container.message-container--align-right {
+    grid-template-areas:
+        "checkbox . status content"
+        "checkbox tips tips tips";
+    grid-template-columns: auto 1fr calc(var(--avatar_size_2) + 8px);
+}
+
+.message-container.message-container--align-right > .avatar-span,
+.message-container.message-container--align-right > .user-name,
+.message-container.message-container--align-right > .only-time {
+    display: none !important;
+}
+
+.message-container:has(.content-status .lt-slot).message-container--align-right {
+    grid-template-columns: auto 1fr 0 !important;
+}
+
+/* 2. 高亮艾特 */
+.container--others msg-at,
+.container--others span.text-element--at {
+    color: var(--text_link) !important;
+}
+
+.container--self msg-at,
+.container--self span.text-element--at {
+    color: #FFD54F !important;
+}
+
+/* 3. 移除表情回应 */
+.menu-stickers-wrapper {
+    display: none !important;
+}

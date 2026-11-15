@@ -1,0 +1,76 @@
+/* ==UserStyle==
+@name           Customize Panels
+@description    自定义隐藏 QQNT 设置界面与更多菜单中的选项
+@namespace      https://github.com/Nekozuka-Hibiki
+@version        26.11.16
+@author         Nekozuka-Hibiki
+@license        GPL-3.0
+@homepageURL    https://github.com/Nekozuka-Hibiki/QwQNT-transisio-scriptio-packs
+@preprocessor   transitio
+@var checkbox hide-tuning "隐藏设置“通用”" [0, "flex", "none"]
+@var checkbox hide-remind "隐藏设置“消息通知”" [0, "flex", "none"]
+@var checkbox hide-storage "隐藏设置“存储管理”" [0, "flex", "none"]
+@var checkbox hide-audio-video "隐藏设置“音视频通话”" [1, "flex", "none"]
+@var checkbox hide-keyboard "隐藏设置“快捷键”" [1, "flex", "none"]
+@var checkbox hide-administering-user "隐藏设置“权限设置”" [1, "flex", "none"]
+@var checkbox hide-setting "隐藏设置“登录设置”" [1, "flex", "none"]
+@var checkbox hide-link "隐藏设置“账号绑定与授权”" [1, "flex", "none"]
+@var checkbox hide-nav-skin-normal "隐藏设置“超级调色盘”" [1, "flex", "none"]
+@var checkbox hide-backup "隐藏菜单“聊天记录管理”" [1, "flex", "none"]
+@var checkbox hide-update "隐藏菜单“检查更新”" [1, "flex", "none"]
+@var checkbox hide-help "隐藏菜单“帮助”" [1, "flex", "none"]
+@var checkbox hide-lock "隐藏菜单“锁定”" [1, "flex", "none"]
+@var checkbox hide-settings-menu "隐藏菜单“设置”" [0, "flex", "none"]
+@var checkbox hide-logout "隐藏菜单“退出账号”" [1, "flex", "none"]
+==/UserStyle== */
+
+@namespace xlink "http://www.w3.org/1999/xlink";
+
+/* --- 1. 设置界面 --- */
+.setting-layout > .setting-tab > .nav-bar:not(.liteloader) > .nav-item:has(use[xlink|href="/_upper_/resource/icons/tuning_24.svg#tuning_24"]) {
+    display: var(--hide-tuning) !important;
+}
+.setting-layout > .setting-tab > .nav-bar:not(.liteloader) > .nav-item:has(use[xlink|href="/_upper_/resource/icons/remind_24.svg#remind_24"]) {
+    display: var(--hide-remind) !important;
+}
+.setting-layout > .setting-tab > .nav-bar:not(.liteloader) > .nav-item:has(use[xlink|href="/_upper_/resource/icons/storage_24.svg#storage_24"]) {
+    display: var(--hide-storage) !important;
+}
+.setting-layout > .setting-tab > .nav-bar:not(.liteloader) > .nav-item:has(use[xlink|href="/_upper_/resource/icons/video_on_24.svg#video_on_24"]) {
+    display: var(--hide-audio-video) !important;
+}
+.setting-layout > .setting-tab > .nav-bar:not(.liteloader) > .nav-item:has(use[xlink|href="/_upper_/resource/icons/keyboard_24.svg#keyboard_24"]) {
+    display: var(--hide-keyboard) !important;
+}
+.setting-layout > .setting-tab > .nav-bar:not(.liteloader) > .nav-item:has(use[xlink|href="/_upper_/resource/icons/administering_user_24.svg#administering_user_24"]) {
+    display: var(--hide-administering-user) !important;
+}
+.setting-layout > .setting-tab > .nav-bar:not(.liteloader) > .nav-item:has(use[xlink|href="/_upper_/resource/icons/setting_24.svg#setting_24"]) {
+    display: var(--hide-setting) !important;
+}
+.setting-layout > .setting-tab > .nav-bar:not(.liteloader) > .nav-item:has(use[xlink|href="/_upper_/resource/icons/link_new_24.svg#link_new_24"]) {
+    display: var(--hide-link) !important;
+}
+.setting-layout > .setting-tab > .nav-bar:not(.liteloader) > .nav-item:has(use[xlink|href="/_upper_/resource/icons/nav_skin_normal_24.svg#nav_skin_normal_24"]) {
+    display: var(--hide-nav-skin-normal) !important;
+}
+
+/* --- 2. 更多菜单 --- */
+div.q-context-menu.more-menu > a:has(use[xlink|href="/_upper_/resource/icons/computer_phone_24.svg#computer_phone_24"]) {
+    display: var(--hide-backup) !important;
+}
+div.q-context-menu.more-menu > a:has(use[xlink|href="/_upper_/resource/icons/update_24.svg#update_24"]) {
+    display: var(--hide-update) !important;
+}
+div.q-context-menu.more-menu > div:has(use[xlink|href="/_upper_/resource/icons/question_mark_circle_24.svg#question_mark_circle_24"]) {
+    display: var(--hide-help) !important;
+}
+div.q-context-menu.more-menu > a:has(use[xlink|href="/_upper_/resource/icons/lock_24.svg#lock_24"]) {
+    display: var(--hide-lock) !important;
+}
+div.q-context-menu.more-menu > a:has(use[xlink|href="/_upper_/resource/icons/setting_24.svg#setting_24"]) {
+    display: var(--hide-settings-menu) !important;
+}
+div.q-context-menu.more-menu > a:has(use[xlink|href="/_upper_/resource/icons/group_video_esc_24.svg#group_video_esc_24"]) {
+    display: var(--hide-logout) !important;
+}
