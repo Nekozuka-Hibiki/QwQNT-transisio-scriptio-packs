@@ -21,7 +21,7 @@
 绘制类原生 +1 按钮，双击复读当前消息
 
 - 支持文本、图片消息
-- 优先调用 `lite_tools.nativeCall`，其次 `IpcInterceptor`，最后回退原生 `ipcRenderer`
+- 依赖 `lite-tools` 的 `nativeCall` 发送消息
 
 ### 2. [UI-QuickRemover](./UI-QuickRemover.js)
 
