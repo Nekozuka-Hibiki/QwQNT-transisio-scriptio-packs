@@ -120,30 +120,7 @@
           request
         )?.catch?.(() => {});
       } catch (_) {}
-      return;
     }
-
-    if (window.IpcInterceptor) {
-      const send =
-        window.IpcInterceptor.send ||
-        window.IpcInterceptor.sendIpc ||
-        window.IpcInterceptor.emit;
-      if (typeof send === "function") {
-        try {
-          send.call(window.IpcInterceptor, request);
-        } catch (_) {}
-        return;
-      }
-    }
-
-    try {
-      const { ipcRenderer } = require("electron");
-      let id = 2;
-      try {
-        id = ipcRenderer.sendSync("ELECTRON_BROWSER_CURRENT_WEB_CONTENTS_ID") || 2;
-      } catch (_) {}
-      ipcRenderer.send("RM_IPCFROM_RENDERER" + id, request);
-    } catch (_) {}
   }
 
   // ---------------- 绘制 ----------------
